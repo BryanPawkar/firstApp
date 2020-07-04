@@ -9,6 +9,8 @@ const Logo = () =>{
             <Tilt className="Tilt" options={{ max : 25 }} style={{ height: 100, width: 100 }} >
             <div className="Tilt-inner braco">
                 <a href="https://www.bryanpawkar.com/">
+                    <div className='estrella b'>.</div>
+                    <div className='estrella e'>.</div>
                     <img src={logo} alt="Logo Bryan Pawkar" />        
                 </a>
             </div>

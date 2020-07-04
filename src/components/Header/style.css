@@ -5,12 +5,15 @@ h1{
     font-weight: 200; 
     font-size: 2.5em;
     color: ghostwhite;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(-4px 1px 1px rgba(248, 248, 255, 0.279));
+    transition: filter ease-out 0.8s; 
 }
 .titulo{
     font-family: 'Fredericka the Great', cursive;
     font-size: 2em;
     font-weight: 100;
     color: ghostwhite;
-    
+}
+h1:hover{
+    filter: drop-shadow(-59px 20px 3px rgba(248, 248, 255, 0.544));
 }
