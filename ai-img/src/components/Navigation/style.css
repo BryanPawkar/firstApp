@@ -1,0 +1,12 @@
+h3{
+    color: gainsboro;
+    font-size: 1em; 
+    transform: translateZ(0);
+    transition: transform 0.4s ease-out;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.449));
+}
+h3:hover, h3:focus{
+    cursor: pointer; 
+    text-decoration: underline; 
+    transform: scale(1.15);
+}

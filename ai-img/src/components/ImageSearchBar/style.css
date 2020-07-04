@@ -1,0 +1,36 @@
+.barra{
+    margin-top: 8em; 
+}
+.barra p{
+    font-size: 2em;
+    font-weight: 600;
+    color: ghostwhite;
+}
+.parpadeo{
+    font-size: 1.5em;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation-name: parpadeo;
+    animation-duration: 1.2s;
+    animation-delay: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes parpadeo{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 0.5; 
+    }
+}
+.parpadeo:hover, .parpadeo:focus{
+    cursor: help; 
+    opacity: 0; 
+    animation: 2s parpadeo infinite ease-out; 
+    transition: opacity 0.85s ease;
+}

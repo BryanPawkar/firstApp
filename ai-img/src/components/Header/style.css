@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+h1{
+    text-align: center;
+    display: inline-flex; 
+    font-weight: 200; 
+    font-size: 2.5em;
+    color: ghostwhite;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.titulo{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2em;
+    font-weight: 100;
+    color: ghostwhite;
+    
+}
