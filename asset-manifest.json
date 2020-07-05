@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/firstApp/static/css/main.c9e1eb72.chunk.css",
+    "main.js": "/firstApp/static/js/main.3aa75519.chunk.js",
+    "main.js.map": "/firstApp/static/js/main.3aa75519.chunk.js.map",
+    "runtime-main.js": "/firstApp/static/js/runtime-main.303bb964.js",
+    "runtime-main.js.map": "/firstApp/static/js/runtime-main.303bb964.js.map",
+    "static/js/2.215e95f3.chunk.js": "/firstApp/static/js/2.215e95f3.chunk.js",
+    "static/js/2.215e95f3.chunk.js.map": "/firstApp/static/js/2.215e95f3.chunk.js.map",
+    "index.html": "/firstApp/index.html",
+    "precache-manifest.28df0dc0e1dd87377a08e00c2a6551a2.js": "/firstApp/precache-manifest.28df0dc0e1dd87377a08e00c2a6551a2.js",
+    "service-worker.js": "/firstApp/service-worker.js",
+    "static/css/main.c9e1eb72.chunk.css.map": "/firstApp/static/css/main.c9e1eb72.chunk.css.map",
+    "static/js/2.215e95f3.chunk.js.LICENSE.txt": "/firstApp/static/js/2.215e95f3.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/firstApp/static/media/logo.63d26eab.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.303bb964.js",
+    "static/js/2.215e95f3.chunk.js",
+    "static/css/main.c9e1eb72.chunk.css",
+    "static/js/main.3aa75519.chunk.js"
+  ]
+}
