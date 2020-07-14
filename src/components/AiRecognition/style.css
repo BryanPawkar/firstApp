@@ -1,0 +1,21 @@
+.foto{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 4px 7px ghostwhite;
+    height: auto;
+    margin-bottom: 4rem;
+    filter: drop-shadow(0px 0px 6px rgba(128, 0, 128, 0.616));
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.cajita{
+    position: absolute;
+    box-shadow: 0 0 0 3px #440046e7;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}

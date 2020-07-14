@@ -3,9 +3,9 @@
     justify-content: center; 
 }
 .braco{
-    filter: drop-shadow(0px 0px 4px rgba(248, 248, 255, 0.200)); 
-    margin-bottom: 6em; 
+    filter: drop-shadow(0px 0px 5px rgba(248, 248, 255, 0.411)); 
     position: relative; 
+    right: 1.3em;
 }
 img{
     width: 9rem; 

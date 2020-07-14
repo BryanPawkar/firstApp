@@ -4,8 +4,8 @@ import './style.css';
 const Rank = () =>{
     return (
         <div className= 'rank'>
-            <p>Braco, your current rank is:</p>
-            <p>#2</p>
+            <p style={{margin: '0 0 1em 0'}}>Braco, your current rank is:</p>
+            <p style={{margin: '0 0 1em 0'}}>#2</p>
         </div>
     )
 }

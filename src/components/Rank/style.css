@@ -1,6 +1,8 @@
 .rank{
-    margin-top: 5em; 
+    margin: 0;
+    padding: 1em;
 }
 p{
     color: ghostwhite; 
+    margin: 1em auto;
 }
