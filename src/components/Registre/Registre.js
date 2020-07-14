@@ -1,31 +1,34 @@
 import React from 'react'; 
 import './style.css';
 
-const Signin = ({ onRouteChange }) =>{
+const Registre = ({ onRouteChange }) =>{
     return(
             <div>
-                <div className= 'form' action="#" method="post">
-                    <h2>Ingresar</h2>
+                <div className = 'form' action="#" method="post">
+                    <h2>Crear Usuario</h2>
+                        <p>
+                            <label htmlFor="name" className="floatLabel">Name</label>
+                            <input id="name" name="name" type="text"/>
+                        </p>
                         <p>
                             <label htmlFor="email" className="floatLabel">Email</label>
                             <input id="email" name="email" type="text"/>
-                            <span>Enter a correct password</span>
+                            <span>Enter a valid mail direction</span>
                         </p>
                         <p>
-                            <label htmlFor="password" className="floatLabel">Password</label>
+                            <label htmlFor="password" className="floatLabel">Create Password</label>
                             <input id="password" name="password" type="password"/>
-                            <span>Your passwords must be longer than 8 characteres</span>
+                            <span>Your passwords must be longer</span>
                         </p>
                         <p>
                         <input 
                             onClick = {() => onRouteChange('home')}
                             type="submit" 
-                            value="Ingresar" 
+                            value="Crear" 
                             id="submit"/>
                         </p>
-                    <p  style={{color: 'gray', textDecoration: 'underline', cursor: 'pointer'}} onClick = {() => onRouteChange('registre')}>Registrarse</p>
                 </div>
         </div>
     );
 }
-export default Signin; 
+export default Registre; 

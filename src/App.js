@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import ImageSearchBar from './components/ImageSearchBar/ImageSearchBar';
 import Rank from './components/Rank/Rank';
 import Signin from './components/Signin/Signin'; 
+import Registre from './components/Registre/Registre';
 import AiRecognition from './components/AiRecognition/AiRecognition';
 import Space from './components/Space/Space'; 
 import './App.css';
@@ -54,6 +55,8 @@ class App extends Component{
       input: '', 
       imageUrl: '',
       box: {},
+      route: 'signin', 
+      isSignIn: false,
     }
   }
 
@@ -84,6 +87,14 @@ class App extends Component{
         .then(response => this.displayFace(this.calculateFaceLocation(response)))
         .catch( err => console.log(err));
   }
+  onRouteChange = (route) =>{
+    if(route === 'signOut'){
+      this.setState({isSignIn: false})
+    }else if(route === 'home'){
+      this.setState({isSignIn: true})
+    }
+    this.setState({route: route}); 
+  }
   render(){
     return( 
       <div className="App">
@@ -91,17 +102,28 @@ class App extends Component{
           className = 'particles'
           params={particlesCustom}
         />
-        <Navigation />
+        <Navigation 
+          isSignIn = {this.state.isSignIn}
+          onRouteChange = { this.onRouteChange }/>
         <Header />
         <Logo />
-        <Signin />
-        <Space/>
-        <ImageSearchBar 
-          onInputChange={this.onInputChange}
-          onSubmitButton={this.onSubmitButton}
-        />
-        <AiRecognition box={ this.state.box } imageUrl= {this.state.imageUrl}/>
-        <Rank/>
+        {this.state.route === 'home'
+          ? <div>
+              <Space/>
+              <Space/>
+              <ImageSearchBar 
+                onInputChange={this.onInputChange}
+                onSubmitButton={this.onSubmitButton}
+              />
+              <AiRecognition box={ this.state.box } imageUrl= {this.state.imageUrl}/>
+              <Rank/>
+          </div>
+          :(
+            this.state.route === 'signin' 
+            ? <Signin onRouteChange = { this.onRouteChange }/>
+            :<Registre onRouteChange = { this.onRouteChange }/>
+          )
+        }  
       </div>
     )
   }
